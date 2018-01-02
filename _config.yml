@@ -2,3 +2,4 @@ name: Alberto Gaona
 markdown: kramdown
 permalink: /:year/:month/:day/:title
 baseurl: /
+root: /blog
