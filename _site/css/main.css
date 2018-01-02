@@ -1,0 +1,128 @@
+@import './fonts/fonts.min.css';
+@import './fonts/spartan/stylesheet.css';
+
+body{
+	color: #676767;
+	padding: 0;
+	margin: 0;
+}
+
+h1{ /* Name */
+	font: 50px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.project-img{ /* Project GIF */
+	height:100px;
+	width: auto;
+}
+
+.movie-tile { /* Shadow when the mouse is on the project */
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.movie-tile:hover { /* Pointer when mouse is on the project */
+	background-color: #EEE;
+    cursor: pointer;
+}
+
+h3{ /* Project name */ 
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 17px;
+	color: #008CBA;
+}
+
+h4{ /* Project in-line description */ 
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #676767;
+}
+
+p{
+	text-align: center;
+	font: 16px/1.2 "Proxima Nova",Helvetica,Arial,sans-serif;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+em{
+	color:#4885ed;
+}
+
+.category{
+	font-weight: bold;
+	font-size: 19px;
+}
+
+ul li{
+	font: 20px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	text-decoration: none;
+}
+
+
+.footer{
+	width: 100%;
+	padding: 0.3% 0;
+	display: block;
+	background-color: transparent;
+	border-top: 2px solid #676767;
+}
+
+.inner-container{
+	width: 100%;
+	position: relative;
+	font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+	line-height: 1;
+	text-align: center !important;
+}
+
+.footer-links{
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.footer-links li{
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.footer-links a{ /* Social networks */
+	display: block;
+	padding: 15px 0;
+	font-family: League Spartan,Helvetica,Arial,sans-serif;
+	position: relative;
+	transition: color .3s ease;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 18px;
+	color: #676767;
+}
+
+.footer-copy{ /* Contact and page year */
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	color: #676767;
+	font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
+	margin-bottom: -20px;
+}
+
+a{
+	color: #008CBA;
+	text-decoration: none;
+}
+
+a:focus {
+	outline:0px;
+}
