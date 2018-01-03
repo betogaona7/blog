@@ -2,5 +2,5 @@ name: Alberto Gaona
 markdown: kramdown
 encoding: UTF-8
 baseurl: /blog
-permalink: blog/:categories/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title
 
