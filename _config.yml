@@ -1,6 +1,7 @@
 name: Alberto Gaona
 markdown: kramdown
 encoding: UTF-8
+future: true
 baseurl: /blog
 permalink: /:categories/:year/:month/:day/:title
 
