@@ -2,5 +2,6 @@ name: Alberto Gaona
 markdown: kramdown
 encoding: UTF-8
 
+pageroot: https://betogaona7.github.io/blog
 permalink: /:categories/:year/:month/:day/:title
 
