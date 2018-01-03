@@ -25,7 +25,7 @@ Visualize and make it happen! that's the deal, and always remember:<br><br>
 
 <div class="container">
 	<div class="row">
-		<div class="cold-md-6 col-lg-4 movie-tile text-center size" >
+		<div class="cold-md-6 col-lg-4 movie-tile text-center size" project-name="unknown" >
 			<img src="./img/incognit1.png" class="project-img"/>
 			<h3> Project name not available </h3>
 			<h4> Description not available </h4>
@@ -34,6 +34,7 @@ Visualize and make it happen! that's the deal, and always remember:<br><br>
 </div>
 <script type="text/javascript">
 	$(document).on('click', '.movie-tile', function (event) {
-	    window.location="./projects";
+		var projectName = $(this).attr('project-name');
+	    window.location="./projects/"+projectName+"/";
 	 });
 </script>

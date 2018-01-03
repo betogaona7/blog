@@ -1,9 +1,20 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }}</p>
+<style>
+p{
+	text-align: justify; 
+	font-size: 20px; 
+	padding-left: 10%; 
+	padding-right: 10%;
+}
+</style>
+<div style="background-color: #008CBA; color: #FFF;">
+	<h1 style="font-size: 60px;">{{ page.projectname }}</h1>
+	<h1 style="font-size: 30px;">{{ page.title }}</h1> 
+	<p style="text-align: center; padding-bottom: 35px;">{{ page.date | date_to_string }}</p>
+</div>
 
-<div>
+<div style="padding-top: 100px; padding-bottom: 100px;">
 	{{ content }}
 </div>

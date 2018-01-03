@@ -124,5 +124,12 @@ a{
 }
 
 a:focus {
+	color: #008CBA;
 	outline:0px;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #008CBA;
+	text-decoration: none;
 }

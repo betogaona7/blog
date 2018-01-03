@@ -1,11 +1,13 @@
 ---
-layout: default
+layout: project
 title: Alberto Gaona | Blog
 ---
-<h1> {{ project.name }} </h1>
+<div>
+	<h1> Unknown </h1>
+</div>
 
 <ul>
-	{% for post in site.posts %}
+	{% for post in site.categories.unknownone %}
 		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}"> {{ post.title }}</a></li>
 	{% endfor %}
 </ul>

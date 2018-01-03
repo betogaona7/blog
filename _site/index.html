@@ -13,7 +13,7 @@
   			<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
   			<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-			<link rel="stylesheet" type="text/css" href="./../css/main.css" />
+			<link rel="stylesheet" type="text/css" href="https://betogaona7.github.io/blog/css/base.css" />
 		</head>
 		<body>
 			<h1> Hi there! </h1>
@@ -39,7 +39,7 @@ Visualize and make it happen! that's the deal, and always remember:<br><br>
 
 <div class="container">
 	<div class="row">
-		<div class="cold-md-6 col-lg-4 movie-tile text-center size" >
+		<div class="cold-md-6 col-lg-4 movie-tile text-center size" project-name="unknown" >
 			<img src="./img/incognit1.png" class="project-img"/>
 			<h3> Project name not available </h3>
 			<h4> Description not available </h4>
@@ -48,17 +48,10 @@ Visualize and make it happen! that's the deal, and always remember:<br><br>
 </div>
 <script type="text/javascript">
 	$(document).on('click', '.movie-tile', function (event) {
-	    window.location="./projects";
+		var projectName = $(this).attr('project-name');
+	    window.location="./projects/"+projectName+"/";
 	 });
 </script>
-<!--
-
-
-¡Vizualiza y hazlo pasar! 
-
-
-Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them.
--->
 
 			<footer class="footer">
     			<div class="inner-container">
