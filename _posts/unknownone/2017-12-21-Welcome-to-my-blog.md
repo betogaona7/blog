@@ -4,6 +4,7 @@ title: "10 tips for an awesome and SEO friendly blog post (test)"
 date: 2017-12-31
 projectname: "Unknown"
 category: "unknownone"
+comments: true
 ---
 
 This is not a real post, is a test... Writing a blog post, like all other writing, is a skill. To keep your reader interested, you should think about the structure of your copy and write appealing texts. You can help your readers to grasp the main idea of your post by providing headings, subheadings and clear paragraphs. If people understand and like your text, they are much more inclined to share, like, tweet and link to your post. And that will increase your rankings. So, in order to improve your ranking in Google, you should definitely try to maximize your writing skills!

@@ -19,7 +19,7 @@
 		<body>
 			<!-- facebook Open Graph Metadatas -->
 <meta content="your_facebook_app_id" property="fb:app_id">
-<meta content="blog" property="og:site_name">
+<meta content="Alberto Gaona" property="og:site_name">
 
   <meta content="This is a second test (test)" property="og:title">
 
@@ -27,7 +27,7 @@
   <meta content="article" property="og:type">
 
 
-  <meta content="-" property="og:description">
+  <meta content="Blog bla bla bla" property="og:description">
 
 
   <meta content="http://localhost:4000/unknownone/2018/01/07/Testing-blog" property="og:url">
@@ -64,8 +64,13 @@ p{
 	<h1 style="font-size: 30px;">This is a second test (test)</h1> 
 	<p style="text-align: center; padding-bottom: 35px;">07 Jan 2018</p>
 
-	<div class="fb-share-button" data-href="http://localhost:4000/unknownone/2018/01/07/Testing-blog" data-layout="button_count" style="position: relative; top: -8px; left: 33px; background-color: white;"></div>
-
+  <div class="post-date">Feel free to share!</div>
+  <div class="sharing-icons">
+    <a href="https://twitter.com/intent/tweet?text=This is a second test (test)&amp;url=http://github.com/pages/betogaona7/blog/unknownone/2018/01/07/Testing-blog" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://github.com/pages/betogaona7/blog/unknownone/2018/01/07/Testing-blog&amp;title=This is a second test (test)" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://plus.google.com/share?url=http://github.com/pages/betogaona7/blog/unknownone/2018/01/07/Testing-blog" target="_blank"><i class="fa fa-google-plus" style="background-color: blue;" aria-hidden="true"></i></a>
+  </div>
+</div>
 </div>
 
 <div style="padding-top: 100px; padding-bottom: 100px;">
@@ -78,6 +83,30 @@ p{
 <p>Text copy from <a href="https://yoast.com/seo-friendly-blog-post/">YOAST</a> with the intention only to test.</p>
 
 </div>
+
+<div style="padding: 0px 10% 100px 10%;">
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-betogaona7-github-io-blog.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+<script id="dsq-count-scr" src="//https-betogaona7-github-io-blog.disqus.com/count.js" async></script>
 			<footer class="footer">
     			<div class="inner-container">
     				<ul class="footer-links">
