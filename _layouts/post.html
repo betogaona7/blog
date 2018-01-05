@@ -2,90 +2,90 @@
 layout: default
 ---
 
-<!-- facebook Open Graph Metadatas -->
-<meta content="your_facebook_app_id" property="fb:app_id">
-<meta content="{{ site.title }}" property="og:site_name">
-{% if page.title %}
-  <meta content="{{ page.title }}" property="og:title">
-{% else %}
-  <meta content="{{ site.title }}" property="og:title">
-{% endif %}
-{% if page.title %}
-  <meta content="article" property="og:type">
-{% else %}
-  <meta content="website" property="og:type">
-{% endif %}
-{% if page.description %}
-  <meta content="{{ page.description }}" property="og:description">
-{% else %}
-  <meta content="{{ site.description }}" property="og:description">
-{% endif %}
-{% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-{% endif %}
-{% if page.date %}
-  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ site.url }}/about/" property="article:author">
-{% endif %}
-{% if page.image %}
-  <meta content="/img/posts/{{ page.image }}" property="og:image">
-{% else %}
-  <meta content="/img/logo-high-resolution.png" property="og:image">
-{% endif %}
-{% if page.categories %}
-  {% for category in page.categories limit:1 %}
-  <meta content="{{ category }}" property="article:section">
-  {% endfor %}
-{% endif %}
-{% if page.tags %}
-  {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag">
-  {% endfor %}
-{% endif %}
-
-
 <style>
-p{
-	text-align: justify; 
-	font-size: 20px; 
-	padding-left: 10%; 
-	padding-right: 10%;
-}
-</style>
+  p{
+  	text-align: justify; 
+  	font-size: 20px; 
+  	padding-left: 10%; 
+  	padding-right: 10%;
+  }
 
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+      opacity: 0.7 !important;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .share-icons{
+    text-align: center;
+  }
+</style>
 
 <div style="background-color: #008CBA; color: #FFF;">
 	<h1 style="font-size: 60px;">{{ page.projectname }}</h1>
 	<h1 style="font-size: 30px;">{{ page.title }}</h1> 
 	<p style="text-align: center; padding-bottom: 35px;">{{ page.date | date_to_string }}</p>
-
-  {% include social-sharing.html %}
 </div>
 
-<div style="padding-top: 100px; padding-bottom: 100px;">
+
+<div style="padding-top: 100px;"  >
 	{{ content }}
+  <div class="share-icons" style="padding-top: 50px; padding-bottom: 100px;">
+    <p style="font-size: 15px; text-align: center;"> Feel free to share: </p>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}&amp;title={{ page.title }}" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+  </div>
 </div>
 
-<div style="padding: 0px 10% 100px 10%;">{% if page.comments %}
-  <div id="disqus_thread"></div>
-  <script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-betogaona7-github-io-blog.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}</div>
+  
+
+<div style="padding: 0px 10% 100px 10%;">
+  {% if page.comments %}
+    <div id="disqus_thread"></div>
+      <script>
+        /*var disqus_config = function () {
+          this.page.url = {{ page.url }};  
+          this.page.identifier = {{ page.title }} 
+        };*/
+        (function() { 
+          var d = document, s = d.createElement('script');
+          s.src = 'https://https-betogaona7-github-io-blog.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {% endif %}
+</div>
 
 <script id="dsq-count-scr" src="//https-betogaona7-github-io-blog.disqus.com/count.js" async></script>
