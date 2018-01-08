@@ -7,7 +7,7 @@ layout: default
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
-<meta property="og:image" content="{{ site.baseurl }}/{{ page.image }}" />
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}" />
 
 <!-- meta for Twitter -->
 <meta name="twitter:card" content="summary">
@@ -16,7 +16,7 @@ layout: default
 <meta name="twitter:title" content="{{ page.title }}">
 <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 <meta name="twitter:description" content="{{ page.description }}">
-<meta name="twitter:image:src" content="{{ site.baseurl }}/{{ page.image }}">
+<meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
 
 <style>
   /* Overwrite p style for {{ content }}*/ 
