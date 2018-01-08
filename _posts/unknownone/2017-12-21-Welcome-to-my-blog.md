@@ -4,6 +4,7 @@ layout: post
 title: "10 tips for an awesome and SEO friendly blog post (test)"
 description: "This is the description - 10 tips" 
 image: "/img/default.png"
+imagealt: "Default image"
 date: 2017-12-31
 
 projectname: "Unknown"

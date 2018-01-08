@@ -5,7 +5,6 @@ description: Blog bla bla bla
 baseurl: /blog
 url: "https://betogaona7.github.io"
 
-
 author:
   name: "Alberto Gaona"
   email: "albertoo_3c@hotmail.com"
@@ -15,11 +14,13 @@ author:
   facebook: "betogaona07"
 
 
+
 markdown: kramdown
 encoding: UTF-8
 future: true
 
 disqus: "https-betogaona7-github-io-blog"
+fid: "2010447859198340"
 
 permalink: /:categories/:year/:month/:day/:title
 

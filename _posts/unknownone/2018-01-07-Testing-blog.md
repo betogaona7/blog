@@ -4,6 +4,7 @@ layout: post
 title: "This is a second test (test)"
 description: "This is another description - test"
 image: "img/default.png"
+imagealt: "default image"
 date: 2018-01-07
 
 projectname: "Unknown two"
