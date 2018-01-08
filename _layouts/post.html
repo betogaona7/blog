@@ -2,74 +2,61 @@
 layout: default
 ---
 
+<!-- meta for Facebook, LinkedIn and Google+ -->
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:image" content="{{ site.baseurl }}/{{ page.image }}" />
+
+<!-- meta for Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@betogaona7">
+<meta name="twitter:creator" content="@betogaona7">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image:src" content="{{ site.baseurl }}/{{ page.image }}">
+
 <style>
+  /* Overwrite p style for {{ content }}*/ 
   p{
   	text-align: justify; 
   	font-size: 20px; 
   	padding-left: 10%; 
   	padding-right: 10%;
   }
-
-  .fa {
-    padding: 5px;
-    font-size: 20px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
-
-  .fa:hover {
-      opacity: 0.7 !important;
-  }
-
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-
-  .share-icons{
-    text-align: center;
-  }
 </style>
 
-<div style="background-color: #008CBA; color: #FFF;">
-	<h1 style="font-size: 60px;">{{ page.projectname }}</h1>
-	<h1 style="font-size: 30px;">{{ page.title }}</h1> 
-	<p style="text-align: center; padding-bottom: 35px;">{{ page.date | date_to_string }}</p>
+<div class="post-header">
+	<h1 class="post-projectname">{{ page.projectname }}</h1>
+	<h1 class="post-postname">{{ page.title }}</h1> 
+	<p class="post-date">{{ page.date | date_to_string }}</p>
 </div>
 
 
-<div style="padding-top: 100px;"  >
+<div class="post-content">
 	{{ content }}
-  <div class="share-icons" style="padding-top: 50px; padding-bottom: 100px;">
-    <p style="font-size: 15px; text-align: center;"> Feel free to share: </p>
+  <div class="share-icons icons">
+    <p class="share-text"> Feel free to share: </p>
+
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}&amp;title={{ page.title }}" target="_blank" class="fa fa-facebook"></a>
+
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="fa fa-twitter"></a>
+
     <a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="fa fa-google"></a>
-    <a href="#" class="fa fa-linkedin"></a>
+  
+    <br>
+    <br>
+
+    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    <script type="IN/Share" data-url="{{ site.url }}{{ site.baseurl }}{{ page.url }}"></script>
   </div>
+
 </div>
 
-  
 
-<div style="padding: 0px 10% 100px 10%;">
+<div class="post-comments">
   {% if page.comments %}
     <div id="disqus_thread"></div>
       <script>
