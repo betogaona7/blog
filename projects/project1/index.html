@@ -1,0 +1,14 @@
+---
+layout: default
+title: Alberto Gaona | Blog | Hairstyle
+---
+<div class="project project-head">
+	<h2> Hairstyle </h2>
+	<p> A project that shows people whether a hairstyle will look good on them or not. **  </p>
+</div>
+
+<ul>
+	{% for post in site.categories.unknownone %}
+		<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"> {{ post.title }}</a></li>
+	{% endfor %}
+</ul>

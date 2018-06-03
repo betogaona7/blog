@@ -1,13 +1,21 @@
 @import './fonts/fonts.min.css';
 @import './fonts/spartan/stylesheet.css';
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
 	color: #676767;
-	padding: 0;
-	margin: 0;
 }
 
 h1{ /* Name */
+	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+h2{ 
 	font: 50px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
 	font-weight: 400;
 	text-align: center;
@@ -15,16 +23,26 @@ h1{ /* Name */
 	padding-top: 0;
 }
 
+.project{
+	color: white !important;
+}
+
+.project-head{
+	height: 150px;
+	background-color: #676767;
+	margin-bottom: 50px;
+}
+
 .project-img{ /* Project GIF */
-	height:100px;
-	width: auto;
+	height:auto;
+	width: 100%;
 }
 
 .movie-tile { /* Shadow when the mouse is on the project */
 	margin-bottom: 10px;
 	padding-top: 10px;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .movie-tile:hover { /* Pointer when mouse is on the project */
@@ -40,26 +58,27 @@ h3{ /* Project name */
 
 h4{ /* Project in-line description */ 
 	font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	margin-left: 10px;
 	margin-right: 10px;
 	color: #676767;
 }
 
 p{
-	text-align: center;
+	text-align: justify;
 	font: 16px/1.2 "Proxima Nova",Helvetica,Arial,sans-serif;
 	padding-left: 6%;
 	padding-right: 6%;
 }
 
-em{
+/*em{
 	color:#4885ed;
-}
+}*/
 
 .category{
 	font-weight: bold;
 	font-size: 19px;
+	text-align: center;
 }
 
 ul li{
@@ -69,6 +88,7 @@ ul li{
 
 
 .footer{
+	color: #fdfbfb;
 	width: 100%;
 	padding: 0.3% 0;
 	display: block;
@@ -105,17 +125,24 @@ ul li{
 	transition: color .3s ease;
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 18px;
+	font-size: 20px;
 	color: #676767;
 }
 
 .footer-copy{ /* Contact and page year */
 	width: 100%;
 	text-align: center;
-	font-size: 1em;
-	color: #676767;
+	font-size: 13px;
 	font-family: "Proxima Nova",Helvetica,Arial,sans-serif;
 	margin-bottom: -20px;
+	color: #676767;
+}
+
+.col{
+	width: 19%;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px 0px 0px 14px;
 }
 
 a{
