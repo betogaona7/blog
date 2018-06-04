@@ -10,7 +10,7 @@ title: Alberto Gaona | Blog
 
 <div class="container">
 	<div class="row">
-		<div class="cold-md-6 col-lg-4 movie-tile text-center size" >
+		<div class="cold-md-6 col-lg-4 movie-tile text-center size" project-name='project1' >
 			<img src="./img/project1.png" class="project-img"/>
 			<h3> Hairstyle visualizer ** </h3>
 			<h4> A project that shows people whether a hairstyle will look good on them or not. ** </h4>
@@ -19,6 +19,7 @@ title: Alberto Gaona | Blog
 </div>
 <script type="text/javascript">
 	$(document).on('click', '.movie-tile', function (event) {
-	    window.location="./projects";
+		var projectName = $(this).attr('project-name');
+	    window.location="./projects/" + projectName;
 	 });
 </script>
