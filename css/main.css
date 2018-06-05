@@ -233,3 +233,241 @@ a:focus {
   .post-comments{
   	padding: 0px 10% 100px 10%;
 }
+
+
+@media (max-width:374px) {
+	h1{ /* Name */
+		font: 16px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 36px;
+		padding-top: 10px;
+	}
+
+	p{	/* Blog description */
+		font: 12px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		padding-left: 3%;
+		padding-right: 3%;
+		text-align: center;
+	}
+
+	.category{
+		font-size: 13px;
+	}
+
+	h3{ /* Project name */ 
+		font-size: 15px;
+	}
+
+	h4{ /* Project in-line description */ 
+		font: 12px/1.1 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	ul li{ /* list of posts by project */
+		font: 14px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.post-content{
+    	padding-top: 40px;
+  	}
+		
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links a{
+		font-size: 12px;
+	}
+
+	.col{
+		width: 17%;
+		display: inline-block;
+		margin: 0px 5px 0px 0px;
+		padding: 0px 0px 0px 8px;
+	}
+
+	.footer-copy{
+		font-size: 11px;
+	}
+}
+/** *************************************************************************************************** **/
+@media (min-width: 375px) and (max-width:424px) {
+	h1{ /* Name */
+		font: 16px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 36px;
+		padding-top: 10px;
+	}
+
+	p{	/* Blog description */
+		font: 12px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		padding-left: 3%;
+		padding-right: 3%;
+		text-align: center;
+	}
+
+	.category{
+		font-size: 13px;
+	}
+
+	h3{ /* Project name */ 
+		font-size: 15px;
+	}
+
+	h4{ /* Project in-line description */ 
+		font: 12px/1.1 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	ul li{ /* list of posts by project */
+		font: 14px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.post-content{
+    	padding-top: 40px;
+  	}
+
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links li{
+		margin-right: 10px;
+	}
+
+	.footer-links a{
+		font-size: 11px;
+	}
+
+	.footer-copy{
+		font-size: 0.8em;
+	}
+
+	.col{
+		width: 19%;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px 0px 0px 14px;
+	}
+}
+
+/** *************************************************************************************************** **/
+@media (min-width: 425px) and (max-width:767px) { /* TABLET */
+	h1{ /* Name */
+		font: 16px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 36px;
+		padding-top: 10px;
+	}
+
+	p{	/* Blog description */
+		font: 14px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		padding-left: 3%;
+		padding-right: 3%;
+		text-align: center;
+	}
+
+	.category{
+		font-size: 14px;
+	}
+
+	.container{ /* Project image */
+		width: 350px;
+	}
+
+	h3{ /* Project name */ 
+		font-size: 15px;
+	}
+
+	h4{ /* Project in-line description */ 
+		font: 12px/1.1 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	ul li{ /* list of posts by project */
+		font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.post-content{
+    	padding-top: 40px;
+  	}
+
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links li{
+		margin-right: 17px;
+	}
+
+	.footer-links a{
+		font-size: 14px;
+	}
+
+	.footer-copy{
+		font-size: 12px;
+	}
+	.col{
+		width: 19%;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px 0px 0px 14px;
+	}
+}
+
+/** *************************************************************************************************** **/
+@media (min-width: 768px) and (max-width:1023px) {
+	h1{ /* Name */
+		font: 16px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 45px;
+		padding-top: 10px;
+	}
+
+	p{	/* Blog description */
+		font: 14px/1 "Proxima Nova",Helvetica,Arial,sans-serif;
+		padding-left: 3%;
+		padding-right: 3%;
+		text-align: center;
+	}
+
+	.category{
+		font-size: 14px;
+	}
+
+	.container{ /* Project image */
+		width: 350px;
+	}
+	h3{ /* Project name */ 
+		font-size: 15px;
+	}
+
+	h4{ /* Project in-line description */ 
+		font: 12px/1.1 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	ul li{ /* list of posts by project */
+		font: 16px/1.7 "Proxima Nova",Helvetica,Arial,sans-serif;
+	}
+
+	.post-content{
+    	padding-top: 40px;
+  	}
+
+	.footer{
+		border-top: 1px solid #676767;
+	}
+
+	.footer-links a{
+		font-size: 14px;
+	}
+
+	.footer-copy{
+		font-size: 12px;
+	}
+
+	.col{
+		width: 19%;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px 0px 0px 14px;
+	}
+
+}
