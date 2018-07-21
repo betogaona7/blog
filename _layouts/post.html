@@ -15,12 +15,30 @@ layout: default
   	padding-right: 10%;
   }
 
+  ul, ol{
+    padding-left: 12%;
+  }
+
+  img{
+    width: 320px;
+    display: block;
+    margin: auto;
+  }
+
   @media (max-width:374px) {
     p{
       font-size: 14px; 
       padding-left: 5%; 
       padding-right: 5%;
     } 
+
+    ul, ol{
+    padding-left: 10%;
+    }
+
+    img{
+      width: 250px;
+    }
   }
   @media (min-width: 375px) and (max-width:424px) {
     p{
@@ -28,6 +46,12 @@ layout: default
       padding-left: 5%; 
       padding-right: 5%;
     } 
+    ul, ol{
+      padding-left: 10%;
+    }
+    img{
+      width: 250px;
+    }
   }
   @media (min-width: 425px) and (max-width:767px) {
     p{
@@ -35,12 +59,25 @@ layout: default
       padding-left: 5%; 
       padding-right: 5%;
     }
+    ul, ol{
+      padding-left: 10%;
+    }
+    img{
+      width: 270px;
+    }
   }
   @media (min-width: 768px) and (max-width:1023px) {
     p{
       font-size: 16px; 
       padding-left: 5%; 
       padding-right: 5%;
+    }
+    ul, ol{
+      padding-left: 7%;
+    }
+
+    img{
+      width: 250px;
     }
   }
 </style>
@@ -93,3 +130,11 @@ layout: default
 </div>
 
 <script id="dsq-count-scr" src="//https-betogaona7-github-io-blog.disqus.com/count.js" async></script>
+<script type="text/javascript">
+  var links = document.querySelectorAll( '.post-content a' );  
+    for (var i = 0, length = links.length; i < length; i++) {  
+        if (links[i].hostname != window.location.hostname) {
+            links[i].target = '_blank';
+        }
+    }
+</script>
