@@ -8,7 +8,7 @@ title: Alberto Gaona | Blog | Hairstyle
 </div>
 
 <ul>
-	{% for post in site.categories.projectone %}
+	{% for post in site.categories.projectone reversed %}
 		<li><!--<span>{{ post.date | date_to_string }}</span> » --> <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}"> {{ post.title }}</a></li>
 	{% endfor %}
 </ul>
