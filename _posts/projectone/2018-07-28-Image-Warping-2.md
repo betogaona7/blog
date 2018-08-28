@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Day 9 - IW - Convex hull, Delaunay triangulation, and Affine warp"
+title: "IW - Convex hull, Delaunay triangulation, and Affine warp"
 description: "How a hairstyle visualizer can change the world"
 image: "/img/project1.png"
 imagealt: "Default image"
@@ -22,5 +22,3 @@ Then, we consider the triangles between the source face and the target face, and
 
 ![Face aligment](../../../../img-posts/hairstyle/iw-face-aligment.png)
 
-
-Note: the image rights belongs to [Satya Mallick](https://www.learnopencv.com/author/spmallick/).

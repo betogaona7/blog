@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Day 20 - IW - Seamless cloning"
+title: "IW - Seamless cloning"
 description: "How a hairstyle visualizer can change the world"
 image: "/img/project1.png"
 imagealt: "Default image"
@@ -25,5 +25,3 @@ The intensity of the resulting image at the boundary of the masked region is the
 
 
 ![Face aligment](../../../../img-posts/hairstyle/iw-seamless-cloning.png)
-
-Note: the image rights belongs to [Satya Mallick](https://www.learnopencv.com/author/spmallick/).

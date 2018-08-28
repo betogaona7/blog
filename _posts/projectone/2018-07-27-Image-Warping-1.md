@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Day 8 - IW - Facial landmark detection "
+title: "IW - Facial landmark detection "
 description: "How a hairstyle visualizer can change the world"
 image: "/img/project1.png"
 imagealt: "Default image"
